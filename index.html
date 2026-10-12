@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuis Dasar JavaScript — Tugas Rutin 6</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div class="bg-blob blob-3"></div>
+
+  <div class="quiz-shell">
+
+    <header class="quiz-header">
+      <div class="brand">
+        <p class="brand-kicker">Tugas Rutin 6  Pemrograman Web</p>
+        <h1><span class="brand-main">Kuis</span> Dasar JavaScript</h1>
+      </div>
+      <p class="high-score">
+        <span class="hs-label">Skor tertinggi</span>
+        <span id="highScoreLabel" class="hs-value">0</span>
+      </p>
+    </header>
+
+    <div id="progressWrap" class="progress-wrap hidden">
+      <div class="progress-track">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+      <div class="progress-meta">
+        <span id="questionCount">Soal 1/10</span>
+        <span id="timerLabel">15s</span>
+      </div>
+    </div>
+
+    <main id="quizStage" class="quiz-stage"></main>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
